@@ -8,10 +8,15 @@ namespace Linkedlist
         {
             Console.WriteLine("Welcome to Linked list Program");
             LinkedlistOperations obj = new LinkedlistOperations();
-            obj.AddLast(56);
-            obj.AddLast(30);
-            obj.AddLast(70);
+            //obj.AddLast(56);
+            //obj.AddLast(30);
+            //obj.AddLast(70);
+            //obj.Print();
+            obj.AddFirst(70);
+            obj.AddFirst(30);
+            obj.AddFirst(56);
             obj.Print();
+
         }
     }
 }

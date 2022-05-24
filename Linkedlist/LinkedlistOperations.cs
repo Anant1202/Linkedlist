@@ -9,6 +9,7 @@ namespace Linkedlist
     public class LinkedlistOperations
     {
         Node head;
+        //Adding element at the end
         public void AddLast(int data)
         {
             Node new_node = new Node(data);
@@ -24,10 +25,22 @@ namespace Linkedlist
             }
             lastNode.next = new_node;
         }
+        //Adding element at the front
+        public void AddFirst(int data)
+        {
+            Node firstNode=new Node(data);
+            if(head == null)
+            {
+                head=firstNode;
+                return;
+            }
+            firstNode.next = head;
+            head = firstNode;
+        }
         public void Print()
         {
             Node lastNode=head;
-            Console.Write("Simple Linked list :");
+            Console.Write("\nLinked list elements are:");
             while (lastNode!= null)
             {
                 Console.Write(lastNode.data + "->"); 
