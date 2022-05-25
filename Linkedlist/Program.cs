@@ -11,7 +11,7 @@ namespace Linkedlist
             obj.AddLast(56);
             obj.AddLast(30);
             obj.AddLast(70);
-            obj.Print();
+            
             //obj.AddFirst(70);
             //obj.AddFirst(30);
             //obj.AddFirst(56);
@@ -28,8 +28,10 @@ namespace Linkedlist
             //obj.Print();
             //obj.DeleteLast();
             //obj.Print();
-            obj.Search(30);
-
+            
+            
+            obj.SearchAndInsert(30, 40);
+            obj.Print();
 
         }
     }

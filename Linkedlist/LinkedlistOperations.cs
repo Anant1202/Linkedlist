@@ -116,7 +116,7 @@ namespace Linkedlist
             prevNode.next = null;
         }
         //Searching a particular element 
-        public void Search(int value)
+        public Node Search(int value)
         {
             Node temp = head;
             while (temp != null)
@@ -124,11 +124,21 @@ namespace Linkedlist
                 if (temp.data == value)
                 {
                     Console.WriteLine("Element found.. " + value);
-                    return;
+                    return temp;
                 }
                 temp = temp.next;
             }
             Console.WriteLine("Element not found");
+            return null;
+        }
+        //>If element is found in Search method,then after that insert the element
+        public int SearchAndInsert(int searchdata, int data)
+        {
+            Node temp = Search(searchdata);
+            Node newNode = new Node(data);
+            newNode.next = temp.next;
+            temp.next = newNode;
+            return (newNode.data);
         }
         //Method for displaying the values
         public void Print()
