@@ -89,6 +89,15 @@ namespace Linkedlist
 
             }
         }
+        //Deleting the first element
+        public void DeleteFirst()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked boxes is already empty"); 
+            }
+            head = head.next;
+        }
         public void Print()
         {
             Node lastNode=head;
