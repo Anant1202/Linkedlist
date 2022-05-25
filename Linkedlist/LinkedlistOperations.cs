@@ -131,7 +131,7 @@ namespace Linkedlist
             Console.WriteLine("Element not found");
             return null;
         }
-        //>If element is found in Search method,then after that insert the element
+        //If element is found in Search method,then after that insert the element
         public int SearchAndInsert(int searchdata, int data)
         {
             Node temp = Search(searchdata);
@@ -139,6 +139,26 @@ namespace Linkedlist
             newNode.next = temp.next;
             temp.next = newNode;
             return (newNode.data);
+        }
+        //search and delete
+        public int SearchAndDelete(int data)
+        {
+            Node temp = Search(data);
+            Console.WriteLine("Data {0} has been deleted from linked list", temp.data);
+            temp.next = temp.next.next;
+            int sizeofList = Size();
+            return sizeofList;
+        }
+        public int Size()
+        {
+            int count = 0;
+            Node temp = head;
+            while (temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            return count;
         }
         //Method for displaying the values
         public void Print()

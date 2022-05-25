@@ -10,8 +10,8 @@ namespace Linkedlist
             LinkedlistOperations obj = new LinkedlistOperations();
             obj.AddLast(56);
             obj.AddLast(30);
-            obj.AddLast(70);
-            
+            obj.AddLast(40);
+
             //obj.AddFirst(70);
             //obj.AddFirst(30);
             //obj.AddFirst(56);
@@ -28,11 +28,13 @@ namespace Linkedlist
             //obj.Print();
             //obj.DeleteLast();
             //obj.Print();
-            
-            
-            obj.SearchAndInsert(30, 40);
-            obj.Print();
 
+
+            //obj.SearchAndInsert(30, 40);
+            //obj.Print();
+            obj.AddLast(70);
+            obj.SearchAndDelete(40);
+            obj.Print();
         }
     }
 }
