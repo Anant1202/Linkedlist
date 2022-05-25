@@ -115,6 +115,22 @@ namespace Linkedlist
             }
             prevNode.next = null;
         }
+        //Searching a particular element 
+        public void Search(int value)
+        {
+            Node temp = head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("Element found.. " + value);
+                    return;
+                }
+                temp = temp.next;
+            }
+            Console.WriteLine("Element not found");
+        }
+        //Method for displaying the values
         public void Print()
         {
             Node lastNode=head;

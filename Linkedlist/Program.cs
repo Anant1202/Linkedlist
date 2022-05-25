@@ -26,8 +26,9 @@ namespace Linkedlist
             //obj.Print();
             //obj.DeleteFirst();
             //obj.Print();
-            obj.DeleteLast();
-            obj.Print();
+            //obj.DeleteLast();
+            //obj.Print();
+            obj.Search(30);
 
 
         }
