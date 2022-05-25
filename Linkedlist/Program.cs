@@ -16,10 +16,16 @@ namespace Linkedlist
             //obj.AddFirst(30);
             //obj.AddFirst(56);
             //obj.Print();
-            obj.Append(56);
-            obj.Append(30);
-            obj.Append(70);
+            //obj.Append(56);
+            //obj.Append(30);
+            //obj.Append(70);
+            //obj.Print();
+            obj.InsertBetween(1,56);
+            obj.InsertBetween(2,30);
+            obj.InsertBetween(3,70);
             obj.Print();
+
+
 
         }
     }
