@@ -98,6 +98,23 @@ namespace Linkedlist
             }
             head = head.next;
         }
+        //Deleting the Last element
+        public void DeleteLast()
+        {
+            if (head==null)
+            {
+                Console.WriteLine("Linked boxes is already empty");
+                return;
+            }
+            Node prevNode = head;
+            Node lastNode = head.next;
+            while(lastNode.next != null)
+            {
+                prevNode = lastNode;
+                lastNode = lastNode.next;
+            }
+            prevNode.next = null;
+        }
         public void Print()
         {
             Node lastNode=head;

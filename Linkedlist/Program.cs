@@ -24,7 +24,9 @@ namespace Linkedlist
             //obj.InsertBetween(2,30);
             //obj.InsertBetween(3,70);
             //obj.Print();
-            obj.DeleteFirst();
+            //obj.DeleteFirst();
+            //obj.Print();
+            obj.DeleteLast();
             obj.Print();
 
 
